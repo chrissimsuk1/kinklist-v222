@@ -4,16 +4,16 @@ import { APP_VERSION } from "@/version";
 
 const config = {
     numCols: 6,
-    categoryWidth: 250,
-    titleWithoutSubcategoryHeight: 35,
-    titleWithSubcategoryHeight: 50,
-    categoryRowHeight: 25,
-    offsetTop: 50,
-    offsetLeft: 10,
-    offsetRight: 10,
-    offsetBottom: 10,
-    legendItemWidth: 120,
-    legendOffset: 15,
+    categoryWidth: 550,
+    titleWithoutSubcategoryHeight: 70,
+    titleWithSubcategoryHeight: 100,
+    categoryRowHeight: 50,
+    offsetTop: 100,
+    offsetLeft: 20,
+    offsetRight: 20,
+    offsetBottom: 20,
+    legendItemWidth: 280,
+    legendOffset: 50,
 } as const;
 
 const stripIds = (data: InKinkCategory[]): ExKinkCategory[] => {
@@ -82,9 +82,9 @@ const createCanvas = (width: number, height: number): { canvas: HTMLCanvasElemen
 };
 
 const addUsernameToCanvas = (context: CanvasRenderingContext2D, username: string): void => {
-    context.font = "bold 24px Arial";
+    context.font = "bold 48px Arial";
     context.fillStyle = '#000000';
-    context.fillText(`Kinklist (v${APP_VERSION})` + username, 5, 25);
+    context.fillText(`Kinklist (v${APP_VERSION})` + username, 10, 50);
 }
 
 const divideCategoryColumns = (categories: ExKinkCategory[]): { columns: ExKinkCategory[][], tallestColumnHeight: number } => {
@@ -119,14 +119,14 @@ const calculateCategoryHeight = (category: ExKinkCategory): number => {
 const drawCategory = (context: CanvasRenderingContext2D, x: number, y: number, category: ExKinkCategory, ratings: Rating[], includeComments: boolean): void => {
     // Draw title
     context.fillStyle = '#000000';
-    context.font = 'bold 18px Arial';
-    context.fillText(category.name, x, y + 5);
+    context.font = 'bold 36px Arial';
+    context.fillText(category.name, x, y + 10);
 
     // Optional subcategories
     const hasSubtitle = category.subcategories.length > 1;
     if (hasSubtitle) {
-        context.font = 'italic 12px Arial';
-        context.fillText(category.subcategories.join(', '), x, y + 20);
+        context.font = 'italic 24px Arial';
+        context.fillText(category.subcategories.join(', '), x, y + 50);
     }
 
     // Row
@@ -135,70 +135,70 @@ const drawCategory = (context: CanvasRenderingContext2D, x: number, y: number, c
         const rowY = y + (hasSubtitle ? config.titleWithSubcategoryHeight : config.titleWithoutSubcategoryHeight) + (i * config.categoryRowHeight)
         // Text
         context.fillStyle = '#000000';
-        context.font = '12px Arial';
+        context.font = '24px Arial';
         context.fillText(
             kink.name,
-            x + 5 + (category.subcategories.length *  20),
+            x + 10 + (category.subcategories.length *  50),
             rowY - 6,
         );
         // Circles
         for (let n = 0; n < category.subcategories.length; n++) {
             const subcategory = category.subcategories[n];
             const rating = ratings.find((r) => r.name === kink.ratings[subcategory]) as Rating;
-            const cx = x + 10 + (n * 20);
-            const cy = rowY - 10;
+            const cx = x + 20 + (n * 40);
+            const cy = rowY - 20;
 
             context.beginPath();
-            context.arc(cx, cy, 8, 0, 2 * Math.PI, false);
+            context.arc(cx, cy, 16, 0, 2 * Math.PI, false);
             context.fillStyle = rating.color;
             context.fill();
             context.strokeStyle = `rgba(0, 0, 0, .5)`;
-            context.lineWidth = 1;
+            context.lineWidth = 2;
             context.stroke();
         }
         // Comment
         if (includeComments && kink.comment) {
             const textWidth = context.measureText(kink.name).width;
-            const commentXOffset = x + 20 + (category.subcategories.length *  20) + textWidth;
+            const commentXOffset = x + 40 + (category.subcategories.length *  40) + textWidth;
             context.beginPath();
-            context.ellipse(commentXOffset, rowY - 10, 6, 5, 0, 0.4 * Math.PI, 0.1 * Math.PI, false);
-            context.lineTo(commentXOffset, rowY - 2);
-            context.lineTo(commentXOffset, rowY - 5);
+            context.ellipse(commentXOffset, rowY - 20, 12, 10, 0, 0.4 * Math.PI, 0.1 * Math.PI, false);
+            context.lineTo(commentXOffset, rowY - 4);
+            context.lineTo(commentXOffset, rowY - 10);
             context.fillStyle = '#FFF';
             context.fill();
             context.strokeStyle = `rgba(0, 0, 0, .5)`;
-            context.lineWidth = 1;
+            context.lineWidth = 2;
             context.stroke();
             context.beginPath();
-            context.moveTo(commentXOffset - 3, rowY - 11.5);
-            context.lineTo(commentXOffset + 1, rowY - 11.5);
-            context.moveTo(commentXOffset - 3, rowY - 8.5);
-            context.lineTo(commentXOffset + 3, rowY - 8.5);
+            context.moveTo(commentXOffset - 3, rowY - 23);
+            context.lineTo(commentXOffset + 1, rowY - 23);
+            context.moveTo(commentXOffset - 3, rowY - 17);
+            context.lineTo(commentXOffset + 3, rowY - 17);
             context.fillStyle = '#FFF';
             context.fill();
             context.strokeStyle = `rgba(0, 0, 0, .5)`;
-            context.lineWidth = 1;
+            context.lineWidth = 2;
             context.stroke();
         }
     }
 };
 
 const drawLegend = (context: CanvasRenderingContext2D, ratings: Rating[], canvasWidth: number): void => {
-    context.font = "bold 13px Arial";
+    context.font = "bold 26px Arial";
     context.fillStyle = '#000000';
     
     let x = canvasWidth - config.legendOffset - (config.legendItemWidth * ratings.length);
     for (const rating of ratings) {
         context.beginPath();
-        context.arc(x, 17, 8, 0, 2 * Math.PI, false);
+        context.arc(x, 34, 16, 0, 2 * Math.PI, false);
         context.fillStyle = rating.color;
         context.fill();
         context.strokeStyle = 'rgba(0, 0, 0, 0.5)'
-        context.lineWidth = 1;
+        context.lineWidth = 2;
         context.stroke();
         
         context.fillStyle = '#000000';
-        context.fillText(rating.name, x + 15, 22);
+        context.fillText(rating.name, x + 30, 44);
         x += config.legendItemWidth;
     }
 };
