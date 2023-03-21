@@ -51,8 +51,6 @@ export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] =
 ["Blades", "Clothespins", "Cutting", "Feathers", "Figging", "Fur", "Head petting/stroking hair", "Hot wax", "Ice", "Long nails", "Nipple clamps", "Temperature play", "Tickling", "Vampire gloves", "Wartenberg Wheel"], defaultRating),
     createKinkCategory("Sensory Deprivation", ["Giving/Top", "Receiving/bottom"], 
 ["Blindfold", "Earplugs", "Full-head Hoods"], defaultRating),
-    createKinkCategory("Medical", ["Giving/Top", "Receiving/bottom"], 
-["Dilation", "Needles", "Sounding", "Speculum", "Suturing"], defaultRating),
     createKinkCategory("Primal", ["Predator", "prey"], 
 ["Biting", "Breath Play (Choking)", "Crying", "Growling", "Hair Pulling", "Howling", "Scratching", "Screaming", "Wrestling"], defaultRating),
     createKinkCategory("Electric", ["Giving", "Receiving"], 
