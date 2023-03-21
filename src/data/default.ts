@@ -62,7 +62,7 @@ export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] =
     createKinkCategory("Mind Control", ["Top", "bottom"], 
 ["Forced attire", "Forced bisexuaiity", "Forced eating", "Forced exercise", "Forced nudity", "Forced sexual orientation"], defaultRating),
     createKinkCategory("Misc. Fetish", ["Giving/Actor", "Receiving/Subject"], 
-["Fire play", "Food play", "Forniphilia", "Impregnation", "Pregnancy"], defaultRating),
+["Fire play", "Food play", "Forniphilia", "Impregnation", "bestiality", "Pregnancy"], defaultRating),
     createKinkCategory("Sharing Photos/Videos", ["Giving", "Receiving"], 
 ["Ass", "Face", "Feet", "Full body (clothed)", "Full body (unclothed)", "Genitalia", "Scenes", "Sex"], defaultRating),
 ]
