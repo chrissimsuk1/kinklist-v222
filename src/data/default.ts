@@ -34,7 +34,6 @@ export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] =
 ["Air-suction", "Anal beads", "Buttplugs", "Cock rings", "Dildos", "DIY", "Fuck machines", "External vibrators", "Insertable inflatables", "Insertable vibrators", "Kegel balls", "Magic wands", "Prostate massager", "Strap-ons"], defaultRating),
     createKinkCategory("Aftercare & Non-sexual", ["General"], 
 ["Candles/aromas", "Cuddling", "Dinner/lunch", "Discussion", "Having Sex", "Massages", "Ointments/creams", "Sleeping/napping", "Snacks", "Spooning", "TV"], defaultRating),
-    createKinkCategory("Cruising", ["General"], ["Anonymous sex", "Dark rooms", "Dogging", "Exhibitionism", "Gloryhole", "Sex clubs", "Under-stall", "Voyeurism"], defaultRating),
     createKinkCategory("Body Worship", ["Giving", "Receiving"], 
 ["Ass worship", "Breast worship", "Cock worship", "Foot worship", "Pussy worship"], defaultRating),
     createKinkCategory("Domination", ["Top", "bottom"], 
@@ -62,7 +61,7 @@ export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] =
     createKinkCategory("Mind Control", ["Top", "bottom"], 
 ["Forced attire", "Forced bisexuaiity", "Forced eating", "Forced exercise", "Forced nudity", "Forced sexual orientation"], defaultRating),
     createKinkCategory("Misc. Fetish", ["Giving/Actor", "Receiving/Subject"], 
-["Fire play", "Food play", "Forniphilia", "Impregnation", "bestiality", "Pregnancy"], defaultRating),
+["Fire play", "Food play", "Forniphilia", "Impregnation", "Bestiality", "Pregnancy"], defaultRating),
     createKinkCategory("Sharing Photos/Videos", ["Giving", "Receiving"], 
 ["Ass", "Face", "Feet", "Full body (clothed)", "Full body (unclothed)", "Genitalia", "Scenes", "Sex"], defaultRating),
 ]
