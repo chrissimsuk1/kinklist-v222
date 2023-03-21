@@ -24,11 +24,6 @@ const createKinkCategory = (name: string, subcategories: string[], kinks: string
 });
 
 export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] => [
-    createKinkCategory("Gender interaction", ["Male-presenting", "Female-presenting", "Androgynous"],
-    ["One on one", "Threesomes", "Orgies"], defaultRating),
-    createKinkCategory("Sexual contact", ["General"], ["Male genitalia", "Female genitalia"], defaultRating),
-    createKinkCategory("Bodies", ["Self", "Partner"], 
-["Big butts", "Big dicks", "Big tits", "Body hair (armpits)", "Body hair (arms)", "Body hair (face)", "Body hair (genitalia)", "Body hair (legs)", "Body hair (torso)", "Hair (long)", "Hair(short)", "Piercings (ears)", "Piercings (face)", "Piercings (genitalia)", "Piercings (mouth/tongue)", "Piercings (nipples)", "Tattoos (body)", "Tattoos (face)", "Scarification"], defaultRating),
     createKinkCategory("Clothing", ["Self", "Partner"], 
 ["Body harnesses", "Boy shorts", "Clothed sex", "Corsets", "Costumes", "Crossdressing", "Dresses", "Heels", "Jockstraps", "Murrsuits", "No underwear", "Nudity", "Panties", "Shirts", "Shoes", "Stockings", "Thongs", "Uniforms", "Wigs"], defaultRating),
     createKinkCategory("Materials", ["General"], 
