@@ -5,8 +5,8 @@ import { Rating } from '../types/ratings';
 export const getDefaultRatings = (): Rating[] => [
     { name: 'Not Entered', color: '#FFF' },
     { name: 'Want to try', color: '#C7C7C7' },
-    { name: 'I Love it', color: '#6DB5FE' },
-    { name: 'I Like it', color: '#23FD22' },
+    { name: 'I Love it', color: '#23FD22' },
+    { name: 'I Like it', color: '#6DB5FE' },
     { name: 'It\'s okay', color: '#FDFD6B' },
     { name: 'Maybe', color: '#F57900' },
     { name: 'No', color: '#910000' },
