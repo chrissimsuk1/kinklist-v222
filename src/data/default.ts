@@ -40,8 +40,6 @@ export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] =
 ["Ball Gag", "Cages", "Chains", "Chastity", "Collar", "Handcuffs", "Immobilization", "Leash", "Mummification", "Phallic Gag", "Ring Gag", "Ropes (Shibari)", "Ropes (Standard)", "Spider Gag", "Suspension (Hook)", "Suspension (Rope)"], defaultRating),
     createKinkCategory("Impact Play", ["Hitting", "Receiving"], 
 ["Bastinado", "Belt buckles", "Belts", "Caning", "Cock torture", "Face slapping", "Flogging", "Kicking", "Paddling", "Pussy torture", "Slapping", "Spanking", "Strapping", "Whipping"], defaultRating),
-    createKinkCategory("Degradation", ["Giving/Top", "Receiving/bottom"], 
-["Bimboification", "Body Shaming", "Body Writing", "Cuckold / cuckquean", "Feminization", "Gender stereotypes", "Genitalia mockery", "Humiliation", "Masculinization", "Name calling", "Lending / being lent", "Race stereotypes", "Shaving (body)", "Shaving (head)", "Slut Shaming"], defaultRating),
     createKinkCategory("Consensual Nonconsent", ["Aggressor", "Victim"], 
 ["Alcohol", "Being woken up for play", "Blackmail / coercion", "Drugs", "Kidnapping", "Sex while asleep"], defaultRating),
     createKinkCategory("Sensations", ["Giving/Top", "Receiving/bottom"], 
@@ -54,6 +52,4 @@ export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] =
 ["Blood", "Blood (drinking)", "Creampie", "Creampie eating (felching)", "Lactation (body)", "Lactation (drinking)", "Menstruation", "Menstruation (licking)", "Pee", "Pee (body)", "Pee (face)", "Pee (drinking)", "Scat", "Scat (body)", "Scat (face)", "Scat (eating)", "Semen", "Semen (body)", "Semen (face)", "Semen (eating)", "Spit", "Spit (body)", "Spit (face)", "Spit (drinking)", "Squirt", "Squirt (body)", "Squirt (face)", "Squirt (drinking)", "Vaginal fluids", "Vaginal fluids (body)", "Vaginal fluids (face)", "Vaginal fluids (eating)", "Vomit", "Vomit (body)", "Vomit (face)", "Vomit (drinking)"], defaultRating),
     createKinkCategory("Misc. Fetish", ["Giving/Actor", "Receiving/Subject"], 
 ["Fire play", "Food play", "Forniphilia", "Impregnation", "Bestiality", "Pregnancy"], defaultRating),
-    createKinkCategory("Sharing Photos/Videos", ["Giving", "Receiving"], 
-["Ass", "Face", "Feet", "Full body (clothed)", "Full body (unclothed)", "Genitalia", "Scenes", "Sex"], defaultRating),
 ]
