@@ -9,7 +9,7 @@ export const getDefaultRatings = (): Rating[] => [
     { name: 'I Like it', color: '#6DB5FE' },
     { name: 'It\'s okay', color: '#FDFD6B' },
     { name: 'Maybe', color: '#F57900' },
-    { name: 'No', color: '#910000' },
+    { name: 'No', color: '#000000' },
 ];
 
 const createKinkCategory = (name: string, subcategories: string[], kinks: string[], defaultRating: string): InKinkCategory => ({
