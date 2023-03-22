@@ -50,6 +50,7 @@ export default class Legend extends Vue {
 
 dl {
   display: flex;
+  flex-direction: column;
   gap: .5em;
   padding: .5em 0;
   margin: 0;
