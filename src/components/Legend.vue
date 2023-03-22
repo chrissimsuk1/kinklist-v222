@@ -39,7 +39,6 @@ export default class Legend extends Vue {
 <style lang="scss" scoped>
 .legend {
   display: flex;
-  flex-direction: column;
   align-items: center;
   min-height: 37px;
   background-color: rgba(0, 0, 0, .1);
@@ -50,7 +49,6 @@ export default class Legend extends Vue {
 
 dl {
   display: flex;
-  flex-direction: column;
   gap: .5em;
   padding: .5em 0;
   margin: 0;
