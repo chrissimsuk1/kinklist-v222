@@ -37,6 +37,42 @@ export default class Legend extends Vue {
 </script>
 
 <style lang="scss" scoped>
+@media screen and (max-width:415px) {
+.legend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 37px;
+  background-color: rgba(0, 0, 0, .1);
+  border-radius: 4px;
+  padding: 0 .5em 0 .5em;
+  gap: .5em;
+}
+
+dl {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  padding: .5em 0;
+  margin: 0;
+  border-radius: 4px;
+}
+dd {
+  margin-inline-start: 0;
+  padding-top: 2px;
+}
+.rating {
+  position: relative;
+  display: flex;
+  gap: .3em;
+  isolation: isolate;
+  background-color: #FFF;
+  border: solid rgba(0, 0, 0, .35) 1px;
+  border-radius: 100vw;
+  padding: .2em .5em .2em .3em;
+  }
+}
+@media screen and (min-width:416px) {
 .legend {
   display: flex;
   align-items: center;
@@ -67,6 +103,7 @@ dd {
   border: solid rgba(0, 0, 0, .35) 1px;
   border-radius: 100vw;
   padding: .2em .5em .2em .3em;
+  }
 }
 
 .color {
