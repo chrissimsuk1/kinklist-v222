@@ -25,7 +25,7 @@ const createKinkCategory = (name: string, subcategories: string[], kinks: string
 
 export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] => [
     createKinkCategory("Clothing", ["Self", "Partner"], 
-["Body harnesses", "Clothed sex", "Corsets", "Costumes", "Crossdressing", "Dresses", "Heels", "Jockstraps", "Murrsuits", "No underwear", "Nudity", "Panties", "Shirts", "Shoes", "Stockings", "Thongs", "Uniforms", "Wigs"], defaultRating),
+["Body harnesses", "Clothed sex", "Corsets", "Costumes", "Crossdressing", "Face Mask", "Dresses", "Heels", "Jockstraps", "Murrsuits", "No underwear", "Nudity", "Panties", "Shirts", "Shoes", "Stockings", "Thongs", "Uniforms", "Wigs"], defaultRating),
     createKinkCategory("General sex", ["Giving/Doing", "Receiving"], 
 ["Assjobs", "Barebacking", "Breast/Chest Play", "Deep throat", "Docking", "Double barreling", "Double penetration", "Edging", "Fingering", "Fisting", "Footjobs", "Handjobs", "Hickies", "Kissing", "Nipple Play", "Oral Sex", "Penis in ass", "Penis in vagina", "Rimming", "Teasing", "Titjobs"], defaultRating),
     createKinkCategory("Toys", ["Self", "Partner"], 
@@ -35,7 +35,7 @@ export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] =
     createKinkCategory("Domination", ["Top", "bottom"], 
 ["Begging", "Caregiver / little", "Crawling", "Discipline", "Domestic servitude", "Eye-contact restriction", "Facesitting", "Forced orgasm", "Kneeling", "Learned postures", "Pain training", "Pet play", "Ruined orgasm", "Slavery"], defaultRating),
     createKinkCategory("Restrictive", ["Giving/On Partner", "Receiving/On Me"], 
-["Ball Gag", "Cages", "Chains", "Chastity", "Collar", "Leash", "Immobilization", "Handcuffs", "Phallic Gag", "Ring Gag", "Ropes (Shibari)", "Ropes (Standard)", "Spider Gag", "Suspension (Hook)", "Suspension (Rope)"], defaultRating),
+["Ball Gag", "Cages", "Chains", "Chastity", "Collar", "Leash", "Immobilization", "Handcuffs", "Gag", "Ropes (Standard)", "Spider Gag", "Suspension (Hook)", "Suspension (Rope)"], defaultRating),
     createKinkCategory("Impact Play", ["Hitting", "Receiving"], 
 ["Belts", "Caning", "Cock torture", "Paddling", "Slapping", "Spanking", "Strapping", "Whipping"], defaultRating),
     createKinkCategory("Consensual Nonconsent", ["Aggressor", "Victim"], 
@@ -49,5 +49,5 @@ export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] =
     createKinkCategory("Fluids", ["Giving", "Receiving"], 
 ["Blood", "Blood (drinking)", "Creampie", "Creampie eating (felching)", "Lactation (body)", "Lactation (drinking)", "Pee (body)", "Pee (drinking)", "Semen", "Semen (body)", "Semen (face)", "Semen (eating)", "Spit", "Spit (body)", "Spit (face)", "Squirt", "Squirt (body)", "Squirt (face)", "Squirt (drinking)", "Vaginal fluids"], defaultRating),
     createKinkCategory("Misc. Fetish", ["Giving/Actor", "Receiving/Subject"], 
-["Fire play", "Food play", "Forniphilia", "Impregnation", "Bestiality", "Pregnancy"], defaultRating),
+["Futanari", "Furries", "Monster or Alien", "Tentacles", "Food play", "Forniphilia", "Impregnation", "Bestiality", "Exhibitionism"], defaultRating),
 ]
