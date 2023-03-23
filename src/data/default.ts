@@ -25,7 +25,7 @@ const createKinkCategory = (name: string, subcategories: string[], kinks: string
 
 export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] => [
     createKinkCategory("Clothing", ["Self", "Partner"], 
-["Body harnesses", "Clothed sex", "Piercings", "Corsets", "Uniform / Costume", "Strip Tease", "Face Mask", "Tattoos", "Roleplay", "Gloves", "Dresses", "Heels", "Murrsuits", "Nudity", "Wearing symbolic jewelry", "Shirts", "Stockings", "Glasses", "Cosplay", "Wigs"], defaultRating),
+["Body harnesses", "Clothed sex", "Piercings", "Corsets", "Uniform / Costume", "Strip Tease", "Face Mask", "Tattoos", "Roleplay", "Gloves", "Dresses", "Heels", "Murrsuits", "Nudity", "Wearing symbolic jewelry", "Shirts", "Stockings", "Glasses", "Cosplay", "Cross-dressing", "Wigs"], defaultRating),
     createKinkCategory("General sex", ["Giving/Doing", "Receiving"], 
 ["Assjobs", "Romance / Affection", "Slow Sex Play", "Dirty talk", "Uniforms", "Erotic Dance", "Breast/Chest Play", "Deep throat", "Teasing", "Double barreling", "Double penetration", "3+ Penetration", "Fingering", "Fisting", "Footjobs", "Handjobs", "Hickies", "Kissing", "Nipple Play", "Oral Sex", "Penis in ass", "Penis in vagina", "Teasing", "Titjobs"], defaultRating),
     createKinkCategory("Toys", ["Self", "Partner"], 
