@@ -33,7 +33,7 @@ export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] =
     createKinkCategory("Body Worship", ["Giving", "Receiving"], 
 ["Ass worship", "Breast worship", "Cock worship", "Foot worship", "Cuddling", "Pussy worship"], defaultRating),
     createKinkCategory("Domination", ["Top", "bottom"], 
-["Begging", "Obedience training", "Crawling", "Discipline", "Master/Pet", "Puppy/Pony Play", "Facesitting", "Face Fucking", "Forced orgasm", "Rough Sex", "Kneeling", "Caging", "Pain training", "Pet play"], defaultRating),
+["Begging", "Obedience training", "Crawling", "Discipline", "Master/Pet", "Facesitting", "Face Fucking", "Forced orgasm", "Rough Sex", "Kneeling", "Caging", "Pain training", "Pet play"], defaultRating),
     createKinkCategory("Restrictive", ["Giving/On Partner", "Receiving/On Me"], 
 ["Cages", "Chains", "Chastity", "Collar", "Leash", "Immobilization", "Handcuffs", "Gag", "Ropes (Standard)"], defaultRating),
     createKinkCategory("Impact Play", ["Hitting", "Receiving"], 
