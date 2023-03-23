@@ -41,7 +41,7 @@ export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] =
     createKinkCategory("Consensual Nonconsent", ["Aggressor", "Victim"], 
 ["Alcohol", "Being woken up for play", "Blackmail / coercion", "Drugs", "Sex while asleep"], defaultRating),
     createKinkCategory("Sensations", ["Giving/Top", "Receiving/bottom"], 
-["Clothes pins", "Feathers", "Figging", "Fur", "Head petting/stroking hair", "Hot wax", "Ice", "Nipple clamps", "Tickling", "Vampire gloves"], defaultRating),
+["Clothes pins", "Feathers", "Fur", "Head petting/stroking hair", "Hot wax", "Ice", "Nipple clamps", "Tickling", "Vampire gloves"], defaultRating),
     createKinkCategory("Sensory Deprivation", ["Giving/Top", "Receiving/bottom"], 
 ["Blindfold", "Earplugs", "Full-head Hoods"], defaultRating),
     createKinkCategory("Primal", ["Predator", "prey"], 
