@@ -49,5 +49,5 @@ export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] =
     createKinkCategory("Fluids", ["Giving", "Receiving"], 
 ["Creampie", "Blood play", "Excessive Semen", "Golden Showers", "Semen (body)", "Semen (face)", "Swallowing semen", "Squirt"], defaultRating),
     createKinkCategory("Misc. Fetish", ["Giving/Actor", "Receiving/Subject"], 
-["Futanari", "Furries", "Animal Roles", "Monster or Alien", "Tentacles", "Food play", "Puppy/Pony Play", "Impregnation", "Bestiality", "Feral Play", "Exhibitionism"], defaultRating),
+["Futanari", "Furries", "Animal Roles", "Monster or Alien", "Tentacles", "Food play", "Puppy/Pony Play", "Bestiality", "Feral Play", "Exhibitionism"], defaultRating),
 ]
