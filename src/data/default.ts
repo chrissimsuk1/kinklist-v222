@@ -25,15 +25,15 @@ const createKinkCategory = (name: string, subcategories: string[], kinks: string
 
 export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] => [
     createKinkCategory("Clothing", ["Self", "Partner"], 
-["Body harnesses", "Clothed sex", "Corsets", "Costumes", "Strip Tease", "Face Mask", "Gloves", "Dresses", "Heels", "Murrsuits", "Nudity", "Wearing symbolic jewelry", "Shirts", "Stockings", "Glasses", "Uniforms", "Wigs"], defaultRating),
+["Body harnesses", "Clothed sex", "Piercings", "Corsets", "Uniform / Costume", "Strip Tease", "Face Mask", "Tattoos", "Roleplay", "Gloves", "Dresses", "Heels", "Murrsuits", "Nudity", "Wearing symbolic jewelry", "Shirts", "Stockings", "Glasses", "Cosplay", "Wigs"], defaultRating),
     createKinkCategory("General sex", ["Giving/Doing", "Receiving"], 
 ["Assjobs", "Romance / Affection", "Slow Sex Play", "Dirty talk", "Uniforms", "Erotic Dance", "Breast/Chest Play", "Deep throat", "Teasing", "Double barreling", "Double penetration", "3+ Penetration", "Fingering", "Fisting", "Footjobs", "Handjobs", "Hickies", "Kissing", "Nipple Play", "Oral Sex", "Penis in ass", "Penis in vagina", "Teasing", "Titjobs"], defaultRating),
     createKinkCategory("Toys", ["Self", "Partner"], 
 ["Air-suction", "Anal beads", "Buttplugs", "Cock rings", "Dildos", "DIY", "Fuck machines", "Insertable inflatables", "Insertable vibrators", "Strap-ons"], defaultRating),
     createKinkCategory("Body Worship", ["Giving", "Receiving"], 
-["Ass worship", "Breast worship", "Cock worship", "Foot worship", "Pussy worship"], defaultRating),
+["Ass worship", "Breast worship", "Cock worship", "Foot worship", "Cuddling", "Pussy worship"], defaultRating),
     createKinkCategory("Domination", ["Top", "bottom"], 
-["Begging", "Caregiver / little", "Crawling", "Discipline", "Master/Pet", "Puppy/Pony Play", "Facesitting", "Face Fucking", "Forced orgasm", "Rough Sex", "Kneeling", "Caging", "Pain training", "Pet play"], defaultRating),
+["Begging", "Obedience training", "Crawling", "Discipline", "Master/Pet", "Puppy/Pony Play", "Facesitting", "Face Fucking", "Forced orgasm", "Rough Sex", "Kneeling", "Caging", "Pain training", "Pet play"], defaultRating),
     createKinkCategory("Restrictive", ["Giving/On Partner", "Receiving/On Me"], 
 ["Cages", "Chains", "Chastity", "Collar", "Leash", "Immobilization", "Handcuffs", "Gag", "Ropes (Standard)"], defaultRating),
     createKinkCategory("Impact Play", ["Hitting", "Receiving"], 
@@ -49,5 +49,5 @@ export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] =
     createKinkCategory("Fluids", ["Giving", "Receiving"], 
 ["Blood", "Creampie", "Blood play", "Excessive Semen", "Golden Showers", "Semen (body)", "Semen (face)", "Swallowing semen", "Squirt"], defaultRating),
     createKinkCategory("Misc. Fetish", ["Giving/Actor", "Receiving/Subject"], 
-["Futanari", "Furries", "Animal Roles", "Monster or Alien", "Tentacles", "Food play", "Puppy/Pony Play", "Impregnation", "Bestiality", "Voyeurism/Exhibitionism"], defaultRating),
+["Futanari", "Furries", "Animal Roles", "Monster or Alien", "Tentacles", "Food play", "Puppy/Pony Play", "Impregnation", "Bestiality", "Feral Play", "Exhibitionism"], defaultRating),
 ]
