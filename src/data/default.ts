@@ -35,7 +35,7 @@ export const getDefaultKinkContent = (defaultRating: string): InKinkCategory[] =
     createKinkCategory("Domination", ["Top", "bottom"], 
 ["Begging", "Caregiver / little", "Crawling", "Discipline", "Domestic servitude", "Eye-contact restriction", "Facesitting", "Forced orgasm", "Kneeling", "Learned postures", "Pain training", "Pet play", "Ruined orgasm", "Slavery"], defaultRating),
     createKinkCategory("Restrictive", ["Giving/On Partner", "Receiving/On Me"], 
-["Ball Gag", "Cages", "Chains", "Chastity", "Collar", "Handcuffs", "Immobilization", "Leash", "Mummification", "Phallic Gag", "Ring Gag", "Ropes (Shibari)", "Ropes (Standard)", "Spider Gag", "Suspension (Hook)", "Suspension (Rope)"], defaultRating),
+["Ball Gag", "Cages", "Chains", "Chastity", "Collar", "Handcuffs", "Immobilization", "Leash", "Leash", "Phallic Gag", "Ring Gag", "Ropes (Shibari)", "Ropes (Standard)", "Spider Gag", "Suspension (Hook)", "Suspension (Rope)"], defaultRating),
     createKinkCategory("Impact Play", ["Hitting", "Receiving"], 
 ["Belts", "Caning", "Cock torture", "Paddling", "Slapping", "Spanking", "Strapping", "Whipping"], defaultRating),
     createKinkCategory("Consensual Nonconsent", ["Aggressor", "Victim"], 
